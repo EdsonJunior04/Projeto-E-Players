@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProjetoEplayers</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2faae0d38b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/css/estilo.css" />
+    <link rel="stylesheet" href="~/css/cadastro.css" />
+    </head>
+
+<body>
+    <header>
+        <div class="grid container_header">
+            <img  src="~/imgs/assets/logo.svg" alt="">
+                <nav class="nav_header">
+                    <a href="">inicio</a>
+                    <a href="">horarios</a>
+                    <a href="">campeonato</a>
+                    <a href="">resultados</a>
+                    <a href="">noticias</a>
+                </nav>
+            </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+       
+        <div class="box_footer space_btw grid">
+            <div class="engloba_links">
+                <span class="span_grande_footer">Línks Úteis</span>
+                <ul class="lista_footer">
+                    <li><a href="">Regras de utilização</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Central de ajuda</a></li>
+                    <li><a href="">Mande-nos uma mensagem</a></li>
+                </ul>
+            </div>
+            
+            <div class="engloba_links">
+                <span class="span_grande_footer">Páginas</span>
+                <ul class="lista_footer">
+                    <li><a href="">Ínicio</a></li>
+                    <li><a href="">Campeonatos</a></li>
+                    <li><a href="">Notícias</a></li>
+                    <li><a href="">Login/Cadastro</a></li>
+
+                </ul>
+            </div>
+
+            <img class="img_logo" src="~/imgs/assets/logo.svg" alt="">
+
+            <div class="media">
+                <span class="newsletter_escrita">Faça parte do nosso clan, assine nossa newsletter!</span>
+                
+                <div class="flex email_newsletter">
+                    <input type="text" name="E-mail" placeholder="E-mail" id="input_email">
+    
+                    <button type="submit" class="btn_cadastrar">cadastrar</button>
+
+                </div>
+
+                <div class="flex space_btw siga_nos">
+                    <span>Siga-nos em :</span>
+                    <img class="sociais" src="~/imgs/assets/facebook.png" alt="">
+                    <img class="sociais" src="~/imgs/assets/instagram.png" alt="">
+                    <img class="sociais" src="~/imgs/assets/youtube.png" alt="">
+                </div>
+           
+            </div>
+        </div>
+        </footer>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

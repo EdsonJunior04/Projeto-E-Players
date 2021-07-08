@@ -1,0 +1,156 @@
+/*CADASTRO DE EQUIPES */
+
+.cadastro_banner{
+    background-image: url(../imgs/assets/como_participar_fundo.png);
+    background-color:  rgba(11, 0, 75, 0.5);
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 237px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro_banner h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 61px;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+
+.container_main {
+    height: 779px;
+    background: #1E1C21;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container_input {
+    width: 90%;
+    max-width: 840px;
+    height: 770px;
+
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+
+    box-shadow: 1px 1px 20px 4px #000000;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container_posicionador {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.span_input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: capitalize;
+
+    margin-bottom: 10px;
+
+    color: #FFFFFF;
+
+}
+
+.label_input {
+    width: 146px;
+    height: 30px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    background: #ABABAB;
+}
+
+.label_input:hover {
+    background: #8b8b8b;
+}
+
+.input_file_cadastro {
+    display: none;
+}
+
+.input_email_cadastro {
+    width: 100%;
+    max-width: 575px;
+    height: 30px;
+
+    background-color: #ABABAB
+    ;
+}
+
+.btn_cadastrar {
+    border-radius: 10px;
+    width: 257px;
+    height: 40px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 22px;
+    
+    color: #FFFFFF;    
+}
+.container_main h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 61px;
+    text-transform: capitalize;
+    
+    color: #FFFFFF;
+}
+
+table {
+    width: 90%;
+    max-width: 770px;
+
+    font-size: 20px;
+    line-height: 23px;
+    color: white;
+
+    border: 1px solid white;
+}
+
+.tr1 {
+
+    background-color: #010101;
+
+    height: 60px;
+
+    text-transform: capitalize;
+
+}
+
+.tr_normal{
+    border: 1px solid white;
+
+    height: 42px;
+}
+.cadastro_jogador {
+    height: 1110px;
+}
+
+.jogador {
+    height: 629px;
+}
+
+.equipe {
+    margin-top: 100px;
+}

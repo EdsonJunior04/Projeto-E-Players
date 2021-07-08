@@ -1,0 +1,61 @@
+@using ProjetoEplayers.Models
+@Model Jogador
+@{
+    ViewData["Title"] = "Jogadores";
+}
+
+<div class="cadastro_banner">
+    <h1>cadastro de @ViewData["Title"]</h1>
+</div>
+
+    
+
+    <section class="container_main cadastro_jogador">
+
+        <form method="POST" action='@Url.Action("Cadastrar")' class="container_input jogador">
+
+            <div class="container_posicionador">
+                <label class="span_input">nome do jogador</label>
+                <input class="input_email_cadastro" type="email" name="" id="">
+            </div>
+
+            <div class="container_posicionador">
+                <label class="span_input">email</label>
+                <input class="input_email_cadastro" type="email" name="" id="">
+            </div>
+
+            <div class="container_posicionador">
+                <label class="span_input">senha</label>
+                <input class="input_email_cadastro" type="password" name=""  id="input_senha">
+            </div>
+
+            <div class="container_posicionador equipe">
+                <label class="span_input">equipe</label>
+
+                <select class="input_email_cadastro" name="" id=""></select>
+            </div>
+
+            <button class="btn_cadastrar">cadastrar</button>
+        </form>
+
+        <h2>lista de jogadores</h2>
+
+        <table>
+            <tr class="tr1">
+                <th>nome do jogador</th>
+                <th>equipe</th>
+            </tr>
+        </table>
+
+    </section>
+    <tbody>
+        @foreach (Jogador j in ViewBag.Jogadores)
+        {
+            <tr>
+                <td>@j.IdJogador</td>
+                <td>@j.Nome</td>
+                <td>@j.Email</td>
+                <td><a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@j.IdJogador">Excluir</a>
+            </tr>
+        }
+    </tbody>

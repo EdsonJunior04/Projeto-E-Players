@@ -1,0 +1,48 @@
+@using ProjetoEplayers.Models
+@Model Equipe
+@{
+    ViewData["Title"] = "Equipe";
+}
+
+<div class="cadastro_banner">
+    <h1>Cadastro de @ViewData["Title"]</h1>
+</div>
+
+<form class=" container_main " method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+    <section class="cadastro_main container_input">
+        <div class="container_posicionador">
+            <label class="span_input">nome da equipe</label>
+            <input class="input_email_cadastro" type="email" name="" id="">
+        </div>
+
+        <div class="container_posicionador">
+            <span class="span_input">emblema</span>
+            <label for="file" class="label_input">Escolher Imagem</label>
+            <input class="input_file_cadastro" type="file" name="file" id="file">
+        </div>
+
+        <button class="btn_cadastrar" type="submit">cadastrar</button>
+</form>
+
+<h2>lista de times</h2>
+
+<table>
+    <tr class="tr1">
+        <th>nome da equipe</th>
+        <th>emblema</th>
+    </tr>
+</table>
+
+</section>
+@foreach (Equipe equipe in ViewBag.Equipes)
+{
+    <tr>
+        <td>@equipe.IdEquipe</td>
+        <td>@equipe.Nome</td>
+        <td><img src="/img/Equipes/@equipe.Imagem" alt="Imagem da equipe @equipe.Nome" width="50px"></td>
+        <td><a asp-area="" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe">Excluir</a>
+        </td>
+    </tr>
+}
+</tbody>
+</table>

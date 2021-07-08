@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+/* reset */
+
+.space_btw {
+    display: flex;
+    justify-content: space-between;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/*header*/
+
+header {
+  background-color: black;
+}
+
+
+
+
+.container_header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_header {
+    width: 693px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav_header a {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+/*main */
+
+
+
+
+.banner  {
+    background: linear-gradient(90deg, #9F0000 0%, #CF0000 40.14%, #000207 69.72%, #000000 101.41%);
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    justify-content: space-around;
+    height: 590px;
+}
+
+.container_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_banner {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.banner h1 {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 70px;
+    line-height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_banner {
+    margin-top: 67px;
+}
+
+.btn_inscreva_se {
+    width: 300px;
+    height: 65px;
+    border-radius: 13px;
+    border: none;
+    background-color: red;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    margin-top: 50px;
+    padding: 15px;
+}
+.btn_inscreva_se:hover {
+    background-color: red;
+
+    cursor: pointer;
+}
+
+
+
+/* JOGOS */ 
+
+.jogos {
+    height: 120px;
+    background-color: black;
+}
+
+.container_jogos {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.grid {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+/* como participar */
+
+.como_participar {
+    height: 500px;
+    background-image: url(../imgs/assets/como_participar_fundo.png);
+    background-color: black;
+    background-size: cover;
+    position: relative;
+}
+
+
+.lol {
+    position: absolute;
+    top: -4px;
+    right: 80px;
+    z-index: 1;
+}
+
+.inclinado {
+    clip-path: polygon(0 18%, 100% 0, 100% 84%, 0 100%);
+    background-color: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container_como_participar {
+    height: 68%;
+}
+
+.container_como_participar h2 {
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 58px;
+    color: white;    
+}
+.container_como_participar p {
+    width: 40vw;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 2% 0;
+    color: white;
+}
+
+
+
+/*AO VIVO */
+
+.ao_vivo {
+    height: 120px;
+
+    background-color: #020202;
+
+}
+
+.container_ao_vivo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.span_ao_vivo {
+    width: 30px;
+
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.1rem;
+    text-transform: uppercase;
+
+    color: white;
+}
+
+.times_ao_vivo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.vs_ao_vivo {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: white;
+}
+hr {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    border: 2px solid #FFFFFF;
+}
+
+.span_em_breve {
+    width: 91px;
+
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.1rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*NOTICIAS */
+
+
+.noticias_proximos_jogos {
+    height: 1200px;
+    display: flex;
+    background-color: #1E1C21;
+}
+
+.noticias {
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+}
+
+.posicionador_noticias {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.noticias h2 {
+    margin-top: 30px;
+
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 46px;
+    text-transform: uppercase;
+
+    color: white;
+}
+
+.box_noticia {
+    margin-top: 20px;
+    margin-bottom: 69px;
+
+    width: 211px;
+    height: 35rem;
+
+    background: linear-gradient(180deg, #2B2B2B 0%, #2B2B2B 66.67%, #000000 100%);
+
+    box-shadow: -5px 4px 20px rgba(0, 0, 0, 0.7), 5px 4px 20px 2px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+
+.box_noticia2 {
+    margin-top: 20px;
+    margin-bottom: 69px;
+
+    width: 211px;
+    height: 35rem;
+
+    background: linear-gradient(180deg, #2B2B2B 0%, #2B2B2B 66.67%, #000000 100%);
+
+    box-shadow: -5px 4px 20px rgba(0, 0, 0, 0.7), 5px 4px 20px 2px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.box_noticia h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    color: white;
+
+    padding-left: 12px;
+    
+}
+
+
+
+.box_noticia2 h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    color: white;
+
+    padding-left: 12px;
+    
+}
+
+.box_noticia p {
+    width: 199px;
+
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+    color: white;
+
+    padding-left: 12px;
+
+}
+
+.box_noticia2 p {
+    width: 199px;
+
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+    color: white;
+
+    padding-left: 12px;
+
+}
+
+.isadora_img {
+    width: 210px;
+    border-radius: 3px;
+}
+
+ /*  PROXIMOS JOGOS */
+
+.proximos_jogos {
+    margin-top: 30px;
+
+}
+
+.proximos_jogos h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 46px;
+
+    color: white;
+
+    margin-bottom: 20px;   
+}
+
+.jogos_noticias {
+    width: 284px;
+    height: 900px;
+    background: linear-gradient(180deg, #000000 0%, #2F2F2F 28.65%, #2F2F2F 71.87%, #000000 100%);
+    box-shadow: -5px 4px 20px rgba(0, 0, 0, 0.7), 5px 4px 20px 2px rgba(0, 0, 0, 0.7);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+ .box_proximos_jogos {
+    width: 70%;
+
+    margin-top: 50px;
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.data_proximos_jogos {
+    font-weight: bold;
+    font-size: 18px;
+
+    color: white;
+}
+ 
+
+/* FOOTER */
+
+footer {
+    height: 293px;
+
+    background-color: #010101;
+}
+
+.box_footer {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+}
+
+.engloba_links {
+    height: 60%;
+}
+
+.span_grande_footer {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 4.6rem;
+
+    color: white;
+}
+
+.lista_footer {
+    padding-top: 10px;
+    padding-left: 30px;
+
+    width: max-content;
+}
+
+.lista_footer li {
+    color: white;
+    margin: 0;
+    line-height: 25px;
+}
+
+.lista_footer li::marker {
+    font-size: 2rem;
+}
+
+.lista_footer li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: white;
+}
+
+.newsletter_escrita {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.btn_cadastrar {
+    width: 129px;
+    height: 44px;
+
+    margin-top: 20px;
+
+    background-color: #001F70;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-transform: uppercase;
+    
+    color: white;
+
+    border: none;
+}
+
+.btn_cadastrar:hover {
+    background-color: #001549;
+
+    cursor: pointer;
+}
+
+
+.siga_nos {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    
+    color: #FFFFFF;
+
+    margin-top: 30px;
+    width: 346px;
+
+    align-items: center;
+}
+
+.iframe_footer {
+    width: 100%;
+    height: 289px;
+}
+
+.sociais{
+    width: 50px;
+    height: 50px;
+}
+
+.burguer {
+    display: none;
+}
